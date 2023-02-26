@@ -75,7 +75,7 @@ var swiper = new Swiper(".mySwiper", {
       const increamentNum = Math.floor(targetNum/speed)+1;
       console.log(increamentNum)
       if(initialNum < targetNum){
-        num.innerText = initialNum + increamentNum;
+        num.innerText = `${initialNum + increamentNum}+`;
         setTimeout(() => {
           updateNum();
         }, 10);

@@ -94,6 +94,13 @@ li {
   color: var(--helper);
 }
 
+.mobile-navbar-btn{
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
 /* =============== RE-USABLE CODE ============= */
 
 .section {
@@ -723,4 +730,21 @@ li {
   position: relative;
   border-radius: 50%;
   animation: water-wave 3s linear infinite;
+}
+
+/* =============== MEDIA - QUERIES ============= */
+
+@media (max-width: 980px) {
+  
+  .header{
+    position: relative;
+  }
+
+  .mobile-navbar-btn{
+    display: block;
+    z-index: 9999;
+    border: 3px solid var(--black);
+    color: var(--black);
+  }
+
 }
